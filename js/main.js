@@ -5,14 +5,14 @@ angular.module('invoicing', [])
 
 // The invoice displayed when the user first uses the app
 .constant('DEFAULT_INVOICE', {
-  tax: 13.00,
+  tax: 10.00, // Australian GST
   invoice_number: 10,
   customer_info: {
-    name: 'Mr. John Doe',
-    web_link: 'John Doe Designs Inc.',
-    address1: '1 Infinite Loop',
-    address2: 'Cupertino, California, US',
-    postal: '90210'
+    name: 'Mr. Raven Dodd',
+    web_link: 'Raven Dodd Pty Ltd.',
+    address1: '42 Wallaby Way',
+    address2: 'Sydney',
+    postal: '2000'
   },
   company_info: {
     name: 'Metaware Labs',
