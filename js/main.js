@@ -15,11 +15,11 @@ angular.module('invoicing', [])
     postal: '2000'
   },
   company_info: {
-    name: 'Metaware Labs',
-    web_link: 'www.metawarelabs.com',
-    address1: '123 Yonge Street',
-    address2: 'Toronto, ON, Canada',
-    postal: 'M5S 1B6'
+    name: 'Your Company Info,
+    web_link: 'www.yourcompany.com',
+    address1: '123 xyz Street',
+    address2: 'Sydney NSW',
+    postal: '2000'
   },
   items:[
     { qty: 10, description: 'Gadget', cost: 9.95 }
@@ -95,7 +95,7 @@ angular.module('invoicing', [])
     return [
       {
         name: 'Australian Dollar ($)',
-        symbol: '$'
+        symbol: 'A$'
       },
       {
         name: 'British Pound (£)',
@@ -103,7 +103,7 @@ angular.module('invoicing', [])
       },
       {
         name: 'Canadian Dollar ($)',
-        symbol: 'CAD $ '
+        symbol: 'C$ '
       },
       {
         name: 'Euro (€)',
@@ -119,7 +119,7 @@ angular.module('invoicing', [])
       },
       {
         name: 'US Dollar ($)',
-        symbol: '$'
+        symbol: 'US$'
       }
     ]
   }
@@ -133,7 +133,7 @@ angular.module('invoicing', [])
   function($scope, $http, DEFAULT_INVOICE, DEFAULT_LOGO, LocalStorage, Currency) {
 
   // Set defaults
-  $scope.currencySymbol = '$';
+  $scope.currencySymbol = 'A$';
   $scope.logoRemoved = false;
   $scope.printMode   = false;
 
